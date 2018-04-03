@@ -7,7 +7,7 @@ import unittest
 class Kyc(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Chrome()
+        self.driver = webdriver.Firefox()
         self.driver.maximize_window()
         wait = WebDriverWait(self.driver, 40)
 
