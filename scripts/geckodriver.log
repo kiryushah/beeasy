@@ -288,3 +288,139 @@
 1522661036508	Marionette	INFO	Enabled via --marionette
 1522661039176	Marionette	INFO	Listening on port 37315
 1522661039240	Marionette	WARN	TLS certificate errors will be ignored for this session
+1522752935081	geckodriver	INFO	geckodriver 0.19.1
+1522752935140	geckodriver	INFO	Listening on 127.0.0.1:57555
+1522752935460	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.luXgzVEgAlww"
+1522752941084	Marionette	INFO	Enabled via --marionette
+1522752947154	Marionette	INFO	Listening on port 44263
+1522752948124	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4C0005,name=PLayerTransaction::Msg_NewCompositable) Channel error: cannot send/recv
+
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x4C0005,name=PLayerTransaction::Msg_NewCompositable) Channel error: cannot send/recv
+
+1522753202055	geckodriver	INFO	geckodriver 0.19.1
+1522753202068	geckodriver	INFO	Listening on 127.0.0.1:34575
+1522753202370	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.qCzqBORF5RTo"
+1522753210100	Marionette	INFO	Enabled via --marionette
+1522753216932	Marionette	INFO	Listening on port 32885
+1522753218032	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+[Child 10397, Chrome_ChildThread] WARNING: pipe error (24): Соединение разорвано другой стороной: file /build/firefox-ZnQK43/firefox-59.0.2+linuxmint1+sylvia/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522753410563	geckodriver	INFO	geckodriver 0.19.1
+1522753410574	geckodriver	INFO	Listening on 127.0.0.1:50515
+1522753410890	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.176O7EH5jDpT"
+1522753419546	Marionette	INFO	Enabled via --marionette
+1522753427512	Marionette	INFO	Listening on port 43025
+1522753428390	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+1522753503128	geckodriver	INFO	geckodriver 0.19.1
+1522753503144	geckodriver	INFO	Listening on 127.0.0.1:33319
+1522753503876	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.YpagwXcMianV"
+1522753513104	Marionette	INFO	Enabled via --marionette
+1522753523706	Marionette	INFO	Listening on port 38095
+1522753525338	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript error: resource://pdf.js/web/viewer.js, line 578: ReferenceError: require is not defined
+[Child 10834, Chrome_ChildThread] WARNING: pipe error (16): Соединение разорвано другой стороной: file /build/firefox-ZnQK43/firefox-59.0.2+linuxmint1+sylvia/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522753634930	geckodriver	INFO	geckodriver 0.19.1
+1522753634948	geckodriver	INFO	Listening on 127.0.0.1:58495
+1522753636104	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.1Xv8CmdY1bHp"
+1522753660368	Marionette	INFO	Enabled via --marionette
+1522753674628	Marionette	INFO	Listening on port 43767
+1522753674694	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+[Child 11060, Chrome_ChildThread] WARNING: pipe error (22): Соединение разорвано другой стороной: file /build/firefox-ZnQK43/firefox-59.0.2+linuxmint1+sylvia/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522753827693	geckodriver	INFO	geckodriver 0.19.1
+1522753827695	geckodriver	INFO	Listening on 127.0.0.1:59611
+1522753828781	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.FYZd7za0NmCn"
+1522753829874	Marionette	INFO	Enabled via --marionette
+1522753832746	Marionette	INFO	Listening on port 44465
+1522753832794	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+1522753988293	geckodriver	INFO	geckodriver 0.19.1
+1522753988299	geckodriver	INFO	Listening on 127.0.0.1:47295
+1522753989386	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.MkHNUgUQVzdw"
+1522753991888	Marionette	INFO	Enabled via --marionette
+1522753995624	Marionette	INFO	Listening on port 40579
+1522753995700	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript error: resource://pdf.js/web/viewer.js, line 578: ReferenceError: require is not defined
+[Child 11555, Chrome_ChildThread] WARNING: pipe error (20): Соединение разорвано другой стороной: file /build/firefox-ZnQK43/firefox-59.0.2+linuxmint1+sylvia/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522754062582	geckodriver	INFO	geckodriver 0.19.1
+1522754062585	geckodriver	INFO	Listening on 127.0.0.1:49857
+1522754062871	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.Gjq0I8EVyBJd"
+1522754066070	Marionette	INFO	Enabled via --marionette
+1522754071272	Marionette	INFO	Listening on port 42411
+1522754071928	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 11788, Chrome_ChildThread] WARNING: pipe error (3): Соединение разорвано другой стороной: file /build/firefox-ZnQK43/firefox-59.0.2+linuxmint1+sylvia/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522754181471	geckodriver	INFO	geckodriver 0.19.1
+1522754181476	geckodriver	INFO	Listening on 127.0.0.1:54661
+1522754182584	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.rfXcapsrRM3G"
+1522754183766	Marionette	INFO	Enabled via --marionette
+1522754187506	Marionette	INFO	Listening on port 37025
+1522754188444	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+1522754213919	geckodriver	INFO	geckodriver 0.19.1
+1522754213924	geckodriver	INFO	Listening on 127.0.0.1:45717
+1522754215161	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.K6CUnIQvd0DO"
+1522754218102	Marionette	INFO	Enabled via --marionette
+1522754222234	Marionette	INFO	Listening on port 42371
+1522754222290	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+[Child 12114, Chrome_ChildThread] WARNING: pipe error (15): Соединение разорвано другой стороной: file /build/firefox-ZnQK43/firefox-59.0.2+linuxmint1+sylvia/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522754303401	geckodriver	INFO	geckodriver 0.19.1
+1522754303405	geckodriver	INFO	Listening on 127.0.0.1:32905
+1522754303426	geckodriver	INFO	geckodriver 0.19.1
+1522754303437	geckodriver	INFO	Listening on 127.0.0.1:45837
+1522754304521	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.7H4pnPBX8tDI"
+1522754304523	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.QZiL6DnojFsE"
+1522754305860	Marionette	INFO	Enabled via --marionette
+1522754305860	Marionette	INFO	Enabled via --marionette
+1522754311536	Marionette	INFO	Listening on port 41323
+1522754311544	Marionette	WARN	TLS certificate errors will be ignored for this session
+1522754311548	Marionette	INFO	Listening on port 45111
+1522754311670	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript error: resource://pdf.js/web/viewer.js, line 578: ReferenceError: require is not defined
+JavaScript error: resource://pdf.js/web/viewer.js, line 578: ReferenceError: require is not defined
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x100027,name=PBackground::Msg_PHttpBackgroundChannelConstructor) Channel error: cannot send/recv
+
+[Child 12377, Chrome_ChildThread] WARNING: pipe error (19): Соединение разорвано другой стороной: file /build/firefox-ZnQK43/firefox-59.0.2+linuxmint1+sylvia/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522755443196	geckodriver	INFO	geckodriver 0.19.1
+1522755443214	geckodriver	INFO	Listening on 127.0.0.1:47523
+1522755443800	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.jpOBGJGExnVq"
+1522755453218	Marionette	INFO	Enabled via --marionette
+1522755461380	Marionette	INFO	Listening on port 35311
+1522755462524	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript error: resource://pdf.js/web/viewer.js, line 578: ReferenceError: require is not defined
+[Child 12923, Chrome_ChildThread] WARNING: pipe error (20): Соединение разорвано другой стороной: file /build/firefox-ZnQK43/firefox-59.0.2+linuxmint1+sylvia/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353
+1522755619373	geckodriver	INFO	geckodriver 0.19.1
+1522755619378	geckodriver	INFO	Listening on 127.0.0.1:53851
+1522755619652	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-profile" "/tmp/rust_mozprofile.MvEmyx6gAm1O"
+1522755622114	Marionette	INFO	Enabled via --marionette
+1522755626556	Marionette	INFO	Listening on port 41171
+1522755627522	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=UA-107188113-2, line 69: unreachable code after return statement
+[Child 13242, Chrome_ChildThread] WARNING: pipe error (17): Соединение разорвано другой стороной: file /build/firefox-ZnQK43/firefox-59.0.2+linuxmint1+sylvia/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 353

@@ -28,7 +28,8 @@ class ClickToAllElements(unittest.TestCase):
 
         #whitepaper
         self.driver.find_element_by_xpath("//a[@class ='page-header__button button mod']").click()
-        time.sleep(2)
+        time.sleep(4)
+        self.driver.find_elements_by_xpath("//section[@class='linkAnnotation']")
         self.driver.switch_to.window(main_window)
 
         #login to ico
