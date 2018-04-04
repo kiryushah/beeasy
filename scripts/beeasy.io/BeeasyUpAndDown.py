@@ -13,9 +13,11 @@ class ClickToAllElements(unittest.TestCase):
         self.driver.maximize_window()
         wait = WebDriverWait(self.driver, 40)
 
+
     def test_ClickToAllElements(self):
         self.driver.get("https://beeasy.io")
         time.sleep(4)
+
 
         main_window = self.driver.current_window_handle
 
@@ -34,8 +36,8 @@ class ClickToAllElements(unittest.TestCase):
 
         #login to ico
         self.driver.find_element_by_xpath("//a[@class ='button button--user button--round']").click()
+        time.sleep(5)
 
-        time.sleep(2)
         self.driver.switch_to.window(main_window)
 
         # buy_tokens_1
