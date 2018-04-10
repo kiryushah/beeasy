@@ -6,7 +6,7 @@ import time
 import unittest
 
 
-class ClickToAllElements(unittest.TestCase):
+class IcoAccount(unittest.TestCase):
 
     def setUp(self):
         self.driver = webdriver.Chrome()
@@ -14,7 +14,7 @@ class ClickToAllElements(unittest.TestCase):
         wait = WebDriverWait(self.driver, 40)
 
 
-    def test_ClickToAllElements(self):
+    def IcoAccount(self):
         self.driver.get("https://beeasy.io")
         time.sleep(4)
 
