@@ -6,6 +6,7 @@ import HTMLTestRunner
 from datetime import date
 import os.path
 
+
 IcoTestSuite = unittest.TestSuite()
 IcoTestSuite.addTest(unittest.makeSuite(Login.LogIn))
 IcoTestSuite.addTest(unittest.makeSuite(ChangePassword.ChangePassword))

@@ -3,6 +3,8 @@ from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
 import time
 import unittest
+from teamcity import is_running_under_teamcity
+from teamcity.unittestpy import TeamcityTestRunner
 
 class Kyc(unittest.TestCase):
 
@@ -47,7 +49,10 @@ class Kyc(unittest.TestCase):
         self.driver.close()
 
 if __name__ == "__main__":
-    unittest.main()
+    if is_running_under_teamcity():
+        runner = TeamcityTestRunner()
+    else:
+        runner = unittest.TextTestRunner()
 
 
 
