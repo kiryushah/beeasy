@@ -48,11 +48,12 @@ class Kyc(unittest.TestCase):
     def tearDown(self):
         self.driver.close()
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     if is_running_under_teamcity():
         runner = TeamcityTestRunner()
     else:
         runner = unittest.TextTestRunner()
+    unittest.main(testRunner=runner)
 
 
 
