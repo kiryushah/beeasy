@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-from xvfbwrapper import Xvfb
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import ui
@@ -13,10 +13,12 @@ import random
 class SignUp(unittest.TestCase):
 
     def setUp(self):
-        vdisplay = Xvfb()
-        vdisplay.start()
-        self.driver = webdriver.Chrome()
-        self.driver.maximize_window()
+        options = webdriver.ChromeOptions()
+        options.add_argument('--disable-extensions')
+        options.add_argument('--headless')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--no-sandbox')
+        return webdriver.Chrome(chrome_options=options)
         wait = WebDriverWait(self.driver, 40)
 
     def test_SignUp(self):
@@ -45,7 +47,6 @@ class SignUp(unittest.TestCase):
 
     def tearDown(self):
         self.driver.close()
-        
 
 if __name__ == "__main__":
     unittest.main()
