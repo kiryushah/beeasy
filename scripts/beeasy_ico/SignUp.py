@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-from pyvirtualdisplay import Display
+from xvfbwrapper import Xvfb
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import ui
@@ -13,8 +13,8 @@ import random
 class SignUp(unittest.TestCase):
 
     def setUp(self):
-        display = Display(backend='xvnc', visible=True, rfbport=5900, size=(1440, 900))
-        display.start()
+        vdisplay = Xvfb()
+        vdisplay.start()
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         wait = WebDriverWait(self.driver, 40)
@@ -45,6 +45,7 @@ class SignUp(unittest.TestCase):
 
     def tearDown(self):
         self.driver.close()
+        
 
 if __name__ == "__main__":
     unittest.main()
