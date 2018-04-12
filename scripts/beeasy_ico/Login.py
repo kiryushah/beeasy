@@ -31,6 +31,7 @@ class LogIn(unittest.TestCase):
         time.sleep(3)
 
         #logout
+        wait_i
         self.driver.find_element_by_xpath("//a[@class='nav-link account-link dropdown-toggle']").click()
         time.sleep(2)
         self.driver.find_element_by_xpath("//i[@class='mdi mdi-power']").click()
