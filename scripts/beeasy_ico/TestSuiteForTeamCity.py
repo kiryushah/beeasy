@@ -16,7 +16,7 @@ now = date.today()
 
 filename = str(now)+"-" +"Report.html"
 
-outfile = open(os.path.join('/home/kiryushah/PycharmProjects/crypto/reports',filename), "w")
+outfile = open(os.path.join('/opt/JetBrains/TeamCity/buildAgent/work/db575ad7e572d8ef/reports',filename), "w")
 runner = HTMLTestRunner.HTMLTestRunner(
                 stream=outfile,
                 title='Test Report',
