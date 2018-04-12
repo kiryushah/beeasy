@@ -13,7 +13,7 @@ import random
 class SignUp(unittest.TestCase):
 
     def setUp(self):
-        display = Display(visible=0, size=(800, 800))
+        display = Display(backend='xvnc', visible=True, rfbport=5900, size=(1440, 900))
         display.start()
         self.driver = webdriver.Chrome()
         self.driver.maximize_window()
