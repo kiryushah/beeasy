@@ -19,7 +19,7 @@ class SignUp(unittest.TestCase):
         options.add_argument('--disable-gpu')
         options.add_argument('--no-sandbox')
         return webdriver.Chrome(chrome_options=options)
-        self.driver= webdriver.Chrome(chrome_options=options)
+        self.driver = webdriver.Chrome()
         wait = WebDriverWait(self.driver, 40)
 
     def test_SignUp(self):
