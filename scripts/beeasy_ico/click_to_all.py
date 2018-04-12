@@ -48,7 +48,7 @@ class ClcikToAll(unittest.TestCase):
         time.sleep(2)
 
         self.driver.find_element_by_xpath("//a[@class='nav-link account-link dropdown-toggle']").click()
-        self.driver.find_element_by_xpath("//a[@routerlink='/settings']").click()
+        self.driver.find_element_by_xpath("//a[@href='/settings']").click()
         time.sleep(2)
 
         #logout
