@@ -1,6 +1,8 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
+from teamcity import is_running_under_teamcity
+from teamcity.unittestpy import TeamcityTestRunner
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import ui
 from selenium.webdriver.support import expected_conditions as EC
@@ -10,9 +12,12 @@ import unittest
 class LogIn(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Firefox()
-        self.driver.maximize_window()
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument('headless')
+        chrome_options.add_argument('no-sandbox')
+        self.driver = webdriver.Chrome(chrome_options=chrome_options)
         wait = WebDriverWait(self.driver, 40)
+
 
     def test_LogIn(self):
         self.driver.get("https://ico.beeasy.io")
@@ -36,7 +41,8 @@ class LogIn(unittest.TestCase):
         self.driver.close()
 
 if __name__ == "__main__":
-    unittest.main()
-
-
-
+    if is_running_under_teamcity():
+        runner = TeamcityTestRunner()
+    else:
+        runner = unittest.TextTestRunner()
+    unittest.main(testRunner=runner)
