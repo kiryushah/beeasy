@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 from selenium import webdriver
 from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.chrome.options import Options
+from pyvirtualdisplay import Display
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import ui
@@ -13,9 +13,9 @@ import random
 class SignUp(unittest.TestCase):
 
     def setUp(self):
-        chrome_options = Options()
-        chrome_options.add_argument("--headless")
-        self.driver = webdriver.Chrome(chrome_options=chrome_options)
+        display = Display(visible=0, size=(800, 800))
+        display.start()
+        self.driver = webdriver.Chrome()
         self.driver.maximize_window()
         wait = WebDriverWait(self.driver, 40)
 
