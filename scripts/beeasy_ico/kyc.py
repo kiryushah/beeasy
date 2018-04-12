@@ -9,8 +9,10 @@ from teamcity.unittestpy import TeamcityTestRunner
 class Kyc(unittest.TestCase):
 
     def setUp(self):
-        self.driver = webdriver.Firefox()
-        self.driver.maximize_window()
+        chrome_options = webdriver.ChromeOptions()
+        chrome_options.add_argument('headless')
+        chrome_options.add_argument('no-sandbox')
+        self.driver = webdriver.Chrome(chrome_options=chrome_options)
         wait = WebDriverWait(self.driver, 40)
 
     def test_Kyc(self):
