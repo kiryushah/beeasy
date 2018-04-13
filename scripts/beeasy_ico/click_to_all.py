@@ -16,7 +16,7 @@ class ClcikToAll(unittest.TestCase):
         self.driver = webdriver.Chrome(chrome_options=chrome_options)
         wait = WebDriverWait(self.driver, 40)
 
-    def test_LogIn(self):
+    def ClickToAll(self):
         self.driver.get("https://ico.beeasy.io")
         time.sleep(4)
         self.driver.find_element_by_xpath("//input[@name='user']").send_keys('alex')
@@ -26,6 +26,7 @@ class ClcikToAll(unittest.TestCase):
         wait_i = self.driver.implicitly_wait(30)
         time.sleep(3)
 
+        wait_i
         self.driver.find_element_by_xpath("//a[@href='/transactions']").click()
         time.sleep(2)
         self.driver.find_element_by_xpath("//a[@href='/about']").click()
