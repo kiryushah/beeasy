@@ -18,7 +18,7 @@ class IcoAccount(unittest.TestCase):
         wait = WebDriverWait(self.driver, 40)
 
 
-    def IcoAccount(self):
+    def test_Ico(self):
         self.driver.get("https://beeasy.io")
         time.sleep(4)
 
@@ -49,9 +49,5 @@ class IcoAccount(unittest.TestCase):
         self.driver.close()
 
 if __name__ == '__main__':
-    if is_running_under_teamcity():
-        runner = TeamcityTestRunner()
-    else:
-        runner = unittest.TextTestRunner()
-    unittest.main(testRunner=runner)
+    unittest.main()
 
