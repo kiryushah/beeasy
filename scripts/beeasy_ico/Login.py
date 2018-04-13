@@ -30,13 +30,6 @@ class LogIn(unittest.TestCase):
         wait_i = self.driver.implicitly_wait(30)
         time.sleep(3)
 
-        #logout
-        wait_i
-        self.driver.find_element_by_xpath("//a[@class='nav-link account-link dropdown-toggle']").click()
-        time.sleep(2)
-        self.driver.find_element_by_xpath("//i[@class='mdi mdi-power']").click()
-        time.sleep(2)
-
 
     def tearDown(self):
         self.driver.close()
