@@ -29,7 +29,7 @@ class Kyc(unittest.TestCase):
         time.sleep(3)
 
         #link to kyc
-        kyc = WebDriverWait(self.driver, 20).until(EC.visibility_of_element_located((By.XPATH, "//a[@href='/kyc']")))
+        kyc = WebDriverWait(self.driver, 20).until(EC.presence_of_element_located((By.XPATH, "//a[@href='/kyc']")))
         kyc.click()
         time.sleep(2)
         self.driver.find_element_by_xpath("//input[@formcontrolname='name']").send_keys('Alex')
