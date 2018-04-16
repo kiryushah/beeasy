@@ -5,6 +5,8 @@ import time
 import unittest
 from teamcity import is_running_under_teamcity
 from teamcity.unittestpy import TeamcityTestRunner
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.common.by import By
 
 class Kyc(unittest.TestCase):
 
@@ -27,7 +29,9 @@ class Kyc(unittest.TestCase):
         time.sleep(3)
 
         #link to kyc
-        self.driver.find_element_by_xpath("//a[@href='/kyc']").click()
+        kyc = WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//a[@href='/kyc']")))
+        kyc.click()
+        self.driver.find_element_by_xpath().click()
         time.sleep(2)
         self.driver.find_element_by_xpath("//input[@formcontrolname='name']").send_keys('Alex')
         self.driver.find_element_by_xpath("//input[@formcontrolname='country']").send_keys('Russia')
