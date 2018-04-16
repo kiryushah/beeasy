@@ -27,7 +27,7 @@ class Kyc(unittest.TestCase):
         time.sleep(3)
 
         #link to kyc
-        self.driver.find_element_by_xpath("//a[@routerlink='/kyc']").click()
+        self.driver.find_element_by_xpath("//a[@href='/kyc']").click()
         time.sleep(2)
         self.driver.find_element_by_xpath("//input[@formcontrolname='name']").send_keys('Alex')
         self.driver.find_element_by_xpath("//input[@formcontrolname='country']").send_keys('Russia')
