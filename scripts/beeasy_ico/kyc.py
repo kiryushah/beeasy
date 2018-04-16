@@ -31,7 +31,6 @@ class Kyc(unittest.TestCase):
         #link to kyc
         kyc = WebDriverWait(self.driver, 20).until(EC.element_to_be_clickable((By.XPATH, "//a[@href='/kyc']")))
         kyc.click()
-        self.driver.find_element_by_xpath().click()
         time.sleep(2)
         self.driver.find_element_by_xpath("//input[@formcontrolname='name']").send_keys('Alex')
         self.driver.find_element_by_xpath("//input[@formcontrolname='country']").send_keys('Russia')
