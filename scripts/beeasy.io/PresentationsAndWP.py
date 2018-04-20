@@ -10,6 +10,7 @@ from teamcity.unittestpy import TeamcityTestRunner
 
 class PresentationsAndWP(unittest.TestCase):
 
+
     def setUp(self):
         chrome_options = webdriver.ChromeOptions()
         chrome_options.add_argument('headless')
@@ -25,6 +26,7 @@ class PresentationsAndWP(unittest.TestCase):
 
         main_window = self.driver.current_window_handle
 
+
         #presentation_russian
         self.driver.find_element_by_xpath("//a[@class ='page-header__button page-header__button--presentation button']").click()
         time.sleep(2)
@@ -32,15 +34,18 @@ class PresentationsAndWP(unittest.TestCase):
         time.sleep(2)
         self.driver.switch_to.window(main_window)
 
+
         #whitepaper_russian
         self.driver.find_element_by_xpath("//a[@class ='page-header__button button mod']").click()
         time.sleep(4)
         self.driver.find_elements_by_xpath("//section[@class='linkAnnotation']")
         self.driver.switch_to.window(main_window)
 
+
         time.sleep(2)
         self.driver.find_element_by_xpath("//div[@class='locales__active']").click()
         self.driver.find_element_by_xpath("//a[@class='locales__item']").click()
+
 
         #presentation_english
         self.driver.find_element_by_xpath("//a[@class ='page-header__button page-header__button--presentation button']").click()
