@@ -14,7 +14,7 @@ class PresentationsAndWP(unittest.TestCase):
     def setUp(self):
         chrome_options = webdriver.ChromeOptions()
         #chrome_options.add_argument('headless')
-        #chrome_options.add_argument('no-sandbox')
+        chrome_options.add_argument('no-sandbox')
         self.driver = webdriver.Chrome(chrome_options=chrome_options)
         #self.driver = webdriver.Chrome()
         self.driver.maximize_window()
