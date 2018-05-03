@@ -32,7 +32,7 @@ class BeEasyIcoPage(unittest.TestCase):
         self.driver.find_element_by_xpath("//h2[@class='ico__title']")
         self.driver.switch_to.window(main_window)
         self.driver.switch_to.window(main_window)
-        
+
 
     def tearDown(self):
         self.driver.close()
