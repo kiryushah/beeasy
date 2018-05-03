@@ -8,7 +8,7 @@ from teamcity import is_running_under_teamcity
 from teamcity.unittestpy import TeamcityTestRunner
 
 
-class BeEasyIcoPage(unittest.TestCase):
+class BeEasyRoadmapPage(unittest.TestCase):
 
     def setUp(self):
         chrome_options = webdriver.ChromeOptions()
@@ -18,18 +18,18 @@ class BeEasyIcoPage(unittest.TestCase):
         wait = WebDriverWait(self.driver, 40)
 
 
-    def test_IcoPage(self):
-        self.driver.get("https://beeasy.io/ru#ico")
+    def test_RoadmapPage(self):
+        #roadmap_russian
+        self.driver.get("https://beeasy.io/ru#roadmap")
         time.sleep(4)
 
         main_window = self.driver.current_window_handle
+        self.driver.find_element_by_xpath("//ul[@id='roadmap-slider']")
 
-        self.driver.find_element_by_xpath("//h2[@class='ico__title']")
-
-
-        self.driver.get("https://beeasy.io/en#ico")
+        #roadmap_english
+        self.driver.get("https://beeasy.io/en#roadmap")
         time.sleep(4)
-        self.driver.find_element_by_xpath("//h2[@class='ico__title']")
+        self.driver.find_element_by_xpath("//ul[@id='roadmap-slider']")
         self.driver.switch_to.window(main_window)
 
 
