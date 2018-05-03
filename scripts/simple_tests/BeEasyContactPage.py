@@ -8,7 +8,7 @@ from teamcity import is_running_under_teamcity
 from teamcity.unittestpy import TeamcityTestRunner
 
 
-class ClickToPages(unittest.TestCase):
+class BeEasyContactPage(unittest.TestCase):
 
     def setUp(self):
         chrome_options = webdriver.ChromeOptions()
@@ -18,15 +18,19 @@ class ClickToPages(unittest.TestCase):
         wait = WebDriverWait(self.driver, 40)
 
 
-    def test_ClickToPages(self):
-        self.driver.get("https://beeasy.io")
+    def test_ContactPage(self):
+        #contact_russian
+        self.driver.get("https://beeasy.io/ru#contacts")
         time.sleep(4)
 
+        main_window = self.driver.current_window_handle
+        self.driver.find_element_by_xpath("//div[@class='contacts__wrap']")
 
-        pages=self.driver.find_elements_by_xpath("//a[@class='page-navigation__link link']")
-        for i in pages:
-            i.click()
-            time.sleep(2)
+        #contact_english
+        self.driver.get("https://beeasy.io/en#contacts")
+        time.sleep(4)
+        self.driver.find_element_by_xpath("//div[@class='contacts__wrap']")
+        self.driver.switch_to.window(main_window)
 
 
 
