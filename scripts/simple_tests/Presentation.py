@@ -31,13 +31,13 @@ class Presentations(unittest.TestCase):
 
         #presentation_russian
         self.driver.get("https://beeasy.io/BeEasy_3.2_Rus.pdf")
-        self.driver.find_element_by_class_name('textLayer')
+        self.driver.find_element_by_link_text('BeEasy')
         self.driver.switch_to.window(main_window)
 
 
         #presentation_english
         self.driver.get("https://beeasy.io/BeEasy_3.2_Eng.pdf")
-        self.driver.find_element_by_class_name('textLayer')
+        self.driver.find_element_by_link_text('BeEasy')
         self.driver.switch_to.window(main_window)
 
 
