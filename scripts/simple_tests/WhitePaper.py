@@ -8,7 +8,7 @@ from teamcity import is_running_under_teamcity
 from teamcity.unittestpy import TeamcityTestRunner
 
 
-class PresentationsAndWP(unittest.TestCase):
+class WhitePaper(unittest.TestCase):
 
 
     def setUp(self):
@@ -21,7 +21,7 @@ class PresentationsAndWP(unittest.TestCase):
         wait = WebDriverWait(self.driver, 40)
 
 
-    def test_PresentationsAndWP(self):
+    def test_WhitePaper(self):
         self.driver.get("https://beeasy.io")
         time.sleep(4)
 
