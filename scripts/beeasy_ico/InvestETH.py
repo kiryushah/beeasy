@@ -8,7 +8,7 @@ from teamcity.unittestpy import TeamcityTestRunner
 
 import unittest
 
-class InvestEth(unittest.TestCase):
+class InvestETH(unittest.TestCase):
 
     def setUp(self):
         chrome_options = webdriver.ChromeOptions()
@@ -17,7 +17,7 @@ class InvestEth(unittest.TestCase):
         self.driver = webdriver.Chrome(chrome_options=chrome_options)
         wait = WebDriverWait(self.driver, 40)
 
-    def test_LogIn(self):
+    def test_InvestETH(self):
         self.driver.get("https://ico.beeasy.io")
         time.sleep(4)
 
