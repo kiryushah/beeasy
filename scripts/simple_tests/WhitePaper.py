@@ -35,7 +35,7 @@ class WhitePaper(unittest.TestCase):
         if wp:
             print("White Paper is here!")
         else:
-            print("White Paper is not!")
+            print("White Paper is not!!!")
         self.driver.switch_to.window(main_window)
 
 
