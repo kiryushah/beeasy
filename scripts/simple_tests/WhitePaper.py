@@ -31,7 +31,7 @@ class WhitePaper(unittest.TestCase):
 
         #whitepaper_russian
         self.driver.get("https://beeasy.io/WhitePaper_3.2_Rus.pdf")
-        wp=self.driver.find_element_by_class_name('textLayer')
+        wp = self.driver.find_element_by_xpath("//div[@id='outerContainer']")
         if wp:
             print("Russian White Paper is here!")
         else:
@@ -41,7 +41,7 @@ class WhitePaper(unittest.TestCase):
 
         #whitepaper_english
         self.driver.get("https://beeasy.io/WhitePaper_3.2_Eng.pdf")
-        wp = self.driver.find_element_by_class_name('textLayer')
+        wp = self.driver.find_element_by_xpath("//div[@id='outerContainer']")
         if wp:
             print("English White Paper is here!")
         else:
