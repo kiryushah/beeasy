@@ -24,7 +24,12 @@ class BeEasyAboutPage(unittest.TestCase):
         time.sleep(4)
 
         main_window = self.driver.current_window_handle
-        self.driver.find_element_by_xpath("//div[@class='slick-list draggable']")
+        slick_list=self.driver.find_element_by_xpath("//div[@class='slick-list draggable']")
+
+        if slick_list:
+            print("Slick list is here!")
+        else:
+            print("Slick list is not!")
 
         #about_english
         self.driver.get("https://beeasy.io/en#about")
