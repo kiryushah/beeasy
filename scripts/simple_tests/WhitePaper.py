@@ -31,13 +31,17 @@ class WhitePaper(unittest.TestCase):
 
         #whitepaper_russian
         self.driver.get("https://beeasy.io/WhitePaper_3.2_Rus.pdf")
-        self.driver.find_element_by_tag_name('pre')
+        wp=self.driver.find_element_by_class_name('textLayer')
+        if wp:
+            print("White Paper is here!")
+        else:
+            print("White Paper is not!")
         self.driver.switch_to.window(main_window)
 
 
         #whitepaper_english
         self.driver.get("https://beeasy.io/WhitePaper_3.2_Eng.pdf")
-        self.driver.find_element_by_tag_name('pre')
+        self.driver.find_element_by_class_name('textLayer')
         self.driver.switch_to.window(main_window)
 
 
