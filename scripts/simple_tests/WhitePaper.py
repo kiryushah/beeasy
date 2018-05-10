@@ -33,15 +33,19 @@ class WhitePaper(unittest.TestCase):
         self.driver.get("https://beeasy.io/WhitePaper_3.2_Rus.pdf")
         wp=self.driver.find_element_by_class_name('textLayer')
         if wp:
-            print("White Paper is here!")
+            print("Russian White Paper is here!")
         else:
-            print("White Paper is not!!!")
+            print("Russian White Paper is not!!!")
         self.driver.switch_to.window(main_window)
 
 
         #whitepaper_english
         self.driver.get("https://beeasy.io/WhitePaper_3.2_Eng.pdf")
-        self.driver.find_element_by_class_name('textLayer')
+        wp = self.driver.find_element_by_class_name('textLayer')
+        if wp:
+            print("English White Paper is here!")
+        else:
+            print("English White Paper is not!!!")
         self.driver.switch_to.window(main_window)
 
 
